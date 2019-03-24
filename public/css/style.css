@@ -1,0 +1,94 @@
+.jumbotron {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.jumbotron h1 {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.title {
+  background-color: #cbe6ea;
+  color: #ffffff;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #a7d1f1;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #cbe6ea !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #000000;
+}
+
+.carousel-indicators li {
+  border-color: #000000;
+}
+
+.carousel-indicators li.active {
+  background-color: #000000;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.displayImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 10%;
+}
+
+.preview {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.preview:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.search-result {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.preview-description {
+  padding: 10px 20px;
+}
+
+small {
+  text-align: left;
+  font-size: 11px;
+}

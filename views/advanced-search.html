@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASA Image Galleries</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="home">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search">SEARCH</a></li>
+            <li><a href="advanced-search">ADVANCED SEARCH</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center"></div>
+    <div class="container">
+      <h1>Advanced Search</h1>
+      <p>Fill the fields below as desired. You must at least fill in ONE field. For keywords, make sure to separate words by commas.</p>
+      <form class="navbar-form navbar-left" role="search" method="POST">
+        <div class="form-group">
+          <p>Search term <input type="text" class="form-control" placeholder="Search term" name="term"></p>
+          <p>Keywords <input type="text" class="form-control" placeholder="Keywords" name="keywords" size="50"></p>
+          <p>Location <input type="text" class="form-control" placeholder="Location" name="location"></p>
+          <p>Center <input type="text" class="form-control" placeholder="Center" name="center"></p>
+          <p>NASA ID <input type="text" class="form-control" placeholder="NASA ID" name="nasa_id"></p>
+          <p>Photographer <input type="text" class="form-control" placeholder="Photographer" name="photographer"></p>
+          <p>Year start <input type="text" class="form-control" placeholder="year start" name="year_start"> 
+            to year end <input type="text" class="form-control" placeholder="year end" name="year_end">
+          </p>
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <br>
+      <br><br>
+    </div>
+    <% if (locals.searchResults) { %>
+    <div class="container">
+      <% searchResults.forEach(function(result) { %>
+      <div class="search-result">
+        <img class= "preview" src= "<%= result.links[0].href %>" style="width:300px; height:250px">
+        <div class="preview-description">
+          <h4 style="text-align: left"><%= result.data[0].title %></h4>
+          <small>
+          NASA ID: <%= result.data[0].nasa_id %>
+          <br>
+          Center: <%= result.data[0].center %>
+          </small>
+          <br>
+          <p style="text-align: center">
+            <%= result.data[0].description %>
+          </p>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+    <% } %>
+  </body>
+</html>

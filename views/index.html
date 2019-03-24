@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html=>  
+  <head>
+    <title>NASA Image Galleries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="home">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="search">SEARCH</a></li>
+              <li><a href="advanced-search">ADVANCED SEARCH</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+    <div id="title" class="container-fluid text-center"> 
+      <div class="jumbotron text-center">  
+        <h1>NASA Image Galleries</h1>
+        <p>Made by Wendy Wu</p> 
+      </div>
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class ="displayImage" src="https://images-assets.nasa.gov/image/PIA03096/PIA03096~orig.jpg" alt="Girl in a jacket">
+            <h4>Come discover the fasincating sights that NASA has captured! You can see nebulas in galaxies way beyond our own...</h4>
+          </div>
+          <div class="item">
+              <img class ="displayImage" src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000675/GSFC_20171208_Archive_e000675~small.jpg" alt="Girl in a jacket">
+              <h4>...gleaming clusters of stars...</h4>
+            </div>
+          <div class="item">
+            <img class ="displayImage" src="https://images-assets.nasa.gov/image/iss050e066094/iss050e066094~orig.jpg" alt="Girl in a jacket">
+            <h4>...or even the stunning view above the surface of our Earth. Give it a search!</h4>
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div> 
+  </body>
+</html>
+
+
+
