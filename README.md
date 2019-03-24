@@ -9,6 +9,6 @@ Capital One Software Engineering Summit: submission for MindSumo challenge
 
 ## Features
 ### Search
-* Allows for a general search of a term 
+* Allows for a general search of a specific term 
 ### Advanced Search
-* Allows for detailed search of multiple criteria such as photographer, date, keywords, and more.
+* Allows for detailed search using multiple criteria such as a search term for different fields, such as photographer, date, keywords, and more.
