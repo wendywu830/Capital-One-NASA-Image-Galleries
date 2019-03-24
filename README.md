@@ -1,5 +1,5 @@
 # Capital-One-NASA-Image-Galleries
-Capital One Software Engineering Summit: submission for MindSumo challenge
+Capital One Software Engineering Summit: Wendy Wu's submission for MindSumo challenge
 
 ## APIs and Frameworks 
 * [Express](https://expressjs.com/) - for a server framework for Node.js
