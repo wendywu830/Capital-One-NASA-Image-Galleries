@@ -1,4 +1,4 @@
-# Capital-One-NASA-Image-Galleries
+# Capital One NASA Image Galleries
 Capital One Software Engineering Summit: Wendy Wu's submission for MindSumo challenge
 
 ## APIs and Frameworks 
